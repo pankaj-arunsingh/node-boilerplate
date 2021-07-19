@@ -1,0 +1,22 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "node boilerplate code with tests and lint setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "test-watch":"cross-env NODE_ENV=test jest --verbose --runInBand --watchAll",
+    "dev":"cross-env NODE_ENV=development nodemon index.js"
+  },
+  "author": "Pankaj",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
